@@ -42,10 +42,31 @@ body {
     font-size: 16px;
 }
 
+#introvid {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #intro {
-    background-image: url(../images/londoneye.jpg);
+/*    background-image: url(../images/londoneye.jpg);*/
     background-position: center;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.vidoverlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 92, 151, 0.3);
+    z-index: 1;
 }
 
 .intro {
@@ -61,19 +82,24 @@ body {
     font-size: 6rem;
     font-family: 'Monoton';
     color: #54CC14;
+    color: white;
     z-index: 1;
     position: relative;
     text-shadow: 0 0 20px black;
     margin: 2rem 0;
+    text-align: center;
 }
 
 .intro h2 {
     font-size: 3rem;
     font-family: 'Open Sans';
     color: #A1E30B;
+    color: white;
+/*
     background-image: linear-gradient(45deg, #A1E30B, #D9D60A);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+*/
     z-index: 1;
     position: relative;
     text-shadow: 0 0 50px black;
@@ -122,23 +148,44 @@ body {
     font-size: 4rem;
 /*    padding-top: 1rem;*/
     transition: all 300ms ease-out 100ms;
+    position: relative;
 }
 
 .iconholder {
     margin: 2rem;
     height: 5rem;
     width: 5rem;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(182, 210, 222, 0.7);
-    transition: all 300ms ease-out 300ms;
+    background-color: transparent;
+    transition: all ease-out 300ms;
+}
+
+.iconcc {
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all ease-out 300ms;
+}
+
+.skilldesc:hover .iconcc {
+    transform: scale(1);
 }
 
 .skilldesc:hover .iconholder {
 /*    background-color: rgba(255, 255, 255, 1);*/
+    background-color: #005C97;
+/*    background-color: white;*/
+}
+
+.iconholder::after {
+/*    background-color: rgba(255, 255, 255, 1);*/
+    background-color: white;
 }
 
 .fa-mobile {
@@ -158,7 +205,7 @@ body {
     font-size: 4rem;
     font-family: 'Open Sans';
     color: white;
-    margin-top: 6rem;
+    margin: 3rem 0;
 }
 
 .skillbox {
@@ -180,13 +227,13 @@ body {
 
 
 .skilldesc {
-    min-height: 10rem;
+    min-height: 25rem;
     width: 23%;
     margin: 1rem;
 /*    background-color: rgba(0, 175, 80, 0.8);*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+/*    justify-content: center;*/
     align-items: center;
     border-radius: 10px;
 /*    box-shadow: 0 0 5px #00AF50;*/
@@ -197,7 +244,8 @@ body {
 .skilldesc:hover {
     box-shadow: 0 0 5px black;
 /*    background-color: rgba(0, 175, 80, 0.8);*/
-    background-color: rgba(82, 98, 141, 0.8);
+/*    background-color: rgba(82, 98, 141, 1);*/
+    background-color: #0999AE;
 }
 
 .skilldesc:hover .sq {
@@ -212,6 +260,7 @@ body {
 
 .skilldesc:hover .fa {
     font-size: 3rem;
+    color: #0999AE;
 }
 
 .skilldesc:hover .fa-mobile {
@@ -311,7 +360,7 @@ body {
 
 /**************************************************/
 
-.portlanding {
+.portlanding, #project2 {
 /*
     background-image: url(../images/chess.jpg);
     background-size: cover;
@@ -332,4 +381,124 @@ body {
 
 #particles-js {
     position: relative;
+}
+
+#project1, #project3 {
+    background-image: linear-gradient(90deg, #F9D423, #e65c00);
+}
+
+/***************************************************/
+
+.edu-exp {
+    height: 100%;
+    width: 100%;
+/*    display: flex;*/
+}
+
+#education {
+    background-image: linear-gradient(90deg, #757F9A, #D7DDE8);
+/*
+    position: relative;
+    overflow: hidden;
+*/
+}
+
+/*
+.halfpagebox {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+*/
+
+.halfpageheader {
+    font-size: 4rem;
+    font-family: 'Lato';
+    color: white;
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+}
+
+.edu {
+    width: 50%;
+    height: 70%;
+    background-color: #757F9A;
+    box-shadow: 0 0 10px black;
+    margin: auto;
+    border-radius: 5%;
+}
+
+#edu-timeline {
+    width: 100%;
+    height: 100%;
+/*    background-color: aqua;*/
+    display: flex;
+/*    align-items: center;*/
+    justify-content: center;
+}
+
+.edu-line {
+    width: 6px;
+    height: 60%;
+    background-color: white;
+    position: relative;
+    margin-top: 4rem;
+    transition: all 300ms ease-out 300ms;
+}
+
+.edu-circ {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+}
+
+.circ1 {
+    top: 10rem;
+}
+
+.circ2 {
+    top: 17.5rem;
+}
+
+.circ3 {
+    top: 25.5rem;
+}
+
+.circ4 {
+    top: 33.5rem;
+}
+
+.circ5 {
+    top: 41rem;
+}
+
+.edubreakdown {
+    width: 30%;
+    height: 77%;
+/*    background-color: black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightside {
+    justify-content: center;
+}
+
+.edubox {
+    color: white;
+    border-radius: 5%;
+    border: 1px solid white;
+/*    background-color: black;*/
+    width: 60%;
+    height: 20%;
+}
+
+.rightside .edubox {
+    margin: 3.5rem 0;
 }
