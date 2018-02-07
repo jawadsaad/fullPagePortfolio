@@ -92,6 +92,7 @@ body {
     100% {filter: hue-rotate(360deg);}
 }
 
+/*
 @keyframes neon {
     from {
     text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #A1E30B, 0 0 17.5px #A1E30B, 0 0 20px #A1E30B, 0 0 25px #A1E30B, 0 0 37.5px #A1E30B;
@@ -100,12 +101,15 @@ body {
     text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 3.75px #fff, 0 0 5px #A1E30B, 0 0 8.75px #A1E30B, 0 0 10px #A1E30B, 0 0 12.5px #A1E30B, 0 0 18.75px #A1E30B;
   }
 }
+*/
 
 /*************************************/
 
 #skills {
-    background-color: #5AD0FF;
+/*    background-color: #5AD0FF;*/
 /*    background-color: #FC4533;*/
+    background-image: linear-gradient(180deg, #eef2f3, #8e9eab);
+    background-image: linear-gradient(90deg, #005C97, #363795);
 /*
     background-image: url(../images/code-bg.png);
     background-position: center;
@@ -113,10 +117,38 @@ body {
 */
 }
 
+.fa {
+    color: white;
+    font-size: 4rem;
+/*    padding-top: 1rem;*/
+    transition: all 300ms ease-out 100ms;
+}
+
+.iconholder {
+    margin: 2rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(182, 210, 222, 0.7);
+    transition: all 300ms ease-out 300ms;
+}
+
+.skilldesc:hover .iconholder {
+/*    background-color: rgba(255, 255, 255, 1);*/
+}
+
+.fa-mobile {
+    font-size: 6rem;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+/*    justify-content: center;*/
     align-items: center;
     height: 100%;
     background-color: rgba(90, 208, 255, 0.2);
@@ -126,14 +158,15 @@ body {
     font-size: 4rem;
     font-family: 'Open Sans';
     color: white;
+    margin-top: 6rem;
 }
 
 .skillbox {
     display: flex;
     justify-content: center;
-    align-items: center;
+/*    align-items: center;*/
     width: 100%;
-    height: 80%;
+    height: 30rem;
 }
 
 .devicon {
@@ -144,35 +177,11 @@ body {
     transition: all 300ms ease-out 100ms;
 }
 
-/*
-.html5 {
-    color: #e34f26;
-}
 
-.css3 {
-    color: #274fe3;
-}
-
-.javascript {
-    color: #f7df1e;
-}
-
-.bootstrap {
-    color: #6c39b8;
-}
-
-.csharp {
-    color: #5c2e91;
-}
-
-.asp {
-    color: #0772b5;
-}
-*/
 
 .skilldesc {
     min-height: 10rem;
-    width: 15rem;;
+    width: 23%;
     margin: 1rem;
 /*    background-color: rgba(0, 175, 80, 0.8);*/
     display: flex;
@@ -187,18 +196,50 @@ body {
 
 .skilldesc:hover {
     box-shadow: 0 0 5px black;
-    background-color: rgba(0, 175, 80, 0.8);
-
+/*    background-color: rgba(0, 175, 80, 0.8);*/
+    background-color: rgba(82, 98, 141, 0.8);
 }
 
 .skilldesc:hover .sq {
-    transform: rotate(405deg) scale(1) ;
+    transform: rotate(405deg) scale(1);
 /*    background-color: white;*/
 }
 
 .skilldesc:hover .sq1 {
     transform: rotate(360deg) scale(1);
 /*    background-color: white;*/
+}
+
+.skilldesc:hover .fa {
+    font-size: 3rem;
+}
+
+.skilldesc:hover .fa-mobile {
+    font-size: 5rem;
+}
+
+.skilldesc:hover .skillheader {
+    padding-bottom: 1rem;
+/*    padding-top: 3rem;*/
+}
+
+.skillheader {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 1rem 1rem 0rem 1rem;
+    transition: all 300ms ease-out 100ms;
+}
+
+.skilltext {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.2;
+    transition: all 300ms ease-out 100ms;
+
 }
 
 .sq {
@@ -271,10 +312,14 @@ body {
 /**************************************************/
 
 .portlanding {
+/*
     background-image: url(../images/chess.jpg);
     background-size: cover;
     background-position: center;
     background-color: transparent;
+*/
+    
+    background-image: linear-gradient(90deg, #e65c00, #F9D423);
 }
 
 .overlay {
