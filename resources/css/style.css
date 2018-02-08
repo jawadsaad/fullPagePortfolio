@@ -491,6 +491,9 @@ body {
     position: relative;
     overflow: hidden;
 */
+    background-image: linear-gradient(90deg, #ad5389, #3c1053);
+    background-image: linear-gradient(90deg, #4b6cb7, #182848);
+
 }
 
 /*
@@ -504,7 +507,7 @@ body {
 */
 
 .halfpageheader {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Lato';
     color: white;
     text-align: center;
@@ -531,7 +534,7 @@ body {
 
 .edu-line {
     width: 6px;
-    height: 60%;
+    height: 30rem;
     background-color: white;
     position: relative;
     margin-top: 4rem;
@@ -547,23 +550,28 @@ body {
 }
 
 .circ1 {
-    top: 10rem;
+/*    top: 20%;*/
+    top: 9rem;
 }
 
 .circ2 {
-    top: 17.5rem;
+/*    top: 35%;*/
+    top: 16.33rem;
 }
 
 .circ3 {
-    top: 25.5rem;
+/*    top: 50%;*/
+    top: 23.66rem;
 }
 
 .circ4 {
-    top: 33.5rem;
+/*    top: 65%;*/
+    top: 30.99rem;
 }
 
 .circ5 {
-    top: 41rem;
+/*    top: 80%;*/
+    top: 39rem;
 }
 
 .edubreakdown {
@@ -581,14 +589,95 @@ body {
 }
 
 .edubox {
-    color: white;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5%;
-    border: 1px solid white;
+/*    border: 1px solid white;*/
 /*    background-color: black;*/
-    width: 60%;
-    height: 20%;
+    width: 70%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
 }
 
 .rightside .edubox {
     margin: 3.5rem 0;
+}
+
+.eduinfo {
+    margin: 1rem;
+    width: 50%;
+}
+
+.eduheader {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.eduimgcontainer {
+    height: 6.5rem;
+    max-width: 6.5rem;
+    min-width: 6.5rem;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.eduimg {
+    height: 100%;
+    width: 100%;
+}
+
+/**********************************************/
+
+#experience {
+    background-image: linear-gradient(90deg, #136a8a, #267871);
+}
+
+.xp {
+    height: 100%;
+    width: 100%;
+}
+
+.xphalf {
+    height: 42%;
+/*    width: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    height: 50%;
+    width: 0.2rem;
+    transform: rotate(20deg);
+    background-color: white;
+}
+
+.xptitle, .xpdesc {
+    margin: 2rem;
+}
+
+.xpheader, .xpdesc {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+}
+
+.xpdesc {
+    font-size: 1rem;
+}
+
+/***************************************************/
+
+#aboutme {
+    background-image: linear-gradient(90deg, #000046, #1CB5E0);
+}
+
+.about {
+    height: 100%;
+    width: 100%;
+    color: white;
 }
