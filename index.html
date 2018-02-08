@@ -109,12 +109,26 @@
             
             <div class="section" id="portfolio">
                 <div class="slide portlanding" id="portfoliolanding">
+                    <h1>portfolio</h1>
+<!--
                     <div id="particles-js"></div>
-<!--                    <div class="overlay"></div>-->
+                    <div class="overlay"></div>
+-->
                 </div>
                 
                 <div class="slide" id="project1">
-                    Project 1
+                    <article class="projectcontainer" data-tilt data-tilt-reset="false">
+                        <div id="project1desc" class="projectdesc">
+                            <h1 id="project1header" class="projectheader">project One</h1>
+                            <p id="project1text" class="projecttext">
+                                Built entirely from scratch using HTML5, CSS3 and JavaScript. 3 puzzles, 3 different algorithms. Each level is harder than the previous one. Use the available tools to solve the puzzles if you get stuck.
+                            </p>
+                        </div>
+                        
+                        <div id="project1img" class="projectimg">
+                            <img src="resources/images/projectOne.png" alt="project one" />
+                        </div>
+                    </article>
                 </div>
                 
                 <div class="slide" id="project2">
@@ -196,6 +210,7 @@
         </div>
         
         <script src="resources/particles.js-master/particles.js"></script>
+        <script src="resources/js/vanilla-tilt.min.js"></script>
         <script src="resources/js/main.js"></script>
     </body>
 </html>
